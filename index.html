@@ -1,43 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cover Letter – Shelby Sutcliffe O’Donnell</title>
-  <style>
-    body {
-      font-family: Georgia, serif;
-      max-width: 700px;
-      margin: 40px auto;
-      line-height: 1.6;
-      padding: 0 15px;
-      color: #333;
-    }
-    h1 {
-      font-size: 1.5em;
-      margin-bottom: 0.5em;
-    }
-    .signature {
-      margin-top: 2em;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Applicant: Shelby Sutcliffe O'Donnell</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+  h1 { text-align: center; margin-bottom: 2rem; }
+  .buttons { display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem; }
+  button { padding: 1rem 2rem; font-size: 1rem; cursor: pointer; }
+  pre { background: #f9f9f9; padding: 1.5rem; border-radius: 8px; white-space: pre-wrap; font-size: 1.1rem; line-height: 1.6; }
+</style>
 </head>
 <body>
-  <h1>Shelby Sutcliffe O’Donnell</h1>
-  <p>73 Clark Mill Rd • Weare, NH 03281<br>
-  shelbysodonnell@outlook.com • 603.486.4861<br>
-  <a href="https://www.linkedin.com/in/shelby-sutcliffe-odonnell">LinkedIn</a></p>
 
-  <p>[Date]</p>
-  <p>[Hiring Manager Name]<br>
-  [Company]<br>
-  [Address]</p>
+<h1>Applicant: Shelby Sutcliffe O'Donnell</h1>
 
-  <p>Dear [Hiring Manager],</p>
+<div class="buttons">
+  <button id="coverBtn">Cover Letter</button>
+  <button id="volunteerBtn">Volunteer Experiences</button>
+</div>
 
-  <p>[Insert your cover letter text here.]</p>
+<pre id="display"></pre>
 
-  <p class="signature">Sincerely,<br>
-  Shelby Sutcliffe O’Donnell</p>
+<script>
+  const coverLetterText = `Shelby Sutcliffe O’Donnell
+73 Clark Mill Rd
+Weare, NH 03281
+shelbysodonnell@outlook.com | 603.486.4861
+September 4, 2025
+Geeta Sharma
+Senior Director, Enterprise Data Governance
+The American Red Cross
+Via Online Application
+Dear Ms.Sharma,
+From designing AI-driven mapping tools for supply chain planning to creating persona-based learning experiences for diverse audiences, I have built a career at the intersection of creativity, technology, and human-centered learning. With a formal education grounded in communication, media production, and editing, I have consistently translated complex technical and organizational concepts into accessible, actionable insights—whether through workshops, webinars, or tailored training programs.
+
+My draw to The American Red Cross is deeply personal and enduring: a lifelong commitment to volunteer stewardship and compassionate service, paired with the mission to relieve suffering and strengthen communities. This aligns seamlessly with my professional ethos. At NH MEP, for example, I designed AI-integrated tools and facilitated workshops that enabled 3rd-tier manufacturers to engage with Department of Defense infrastructure programs, translating technical concepts into language that diverse audiences could understand and act upon. Similarly, in healthcare and legal contexts, I have developed training, documentation, and workflow improvements that made complex processes clear and achievable for both technical and non-technical professionals.
+
+I am energized by opportunities to recognize patterns, integrate iterative process improvements, and embed ethical frameworks into learning and operational models. The prospect of advancing AI literacy within the Red Cross—ensuring responsible adoption, transparency, and accessible education—resonates strongly with my experience and values. I am eager to contribute my combination of technical fluency, curriculum development expertise, and compassionate stewardship to support your mission.
+
+Thank you for your consideration. I would welcome the opportunity to discuss how my experience and approach can strengthen AI literacy and responsible technology adoption at The American Red Cross.
+
+Sincerely,
+Shelby Sutcliffe O’Donnell`;
+
+  const volunteerExperiencesText = `Voting Member – Weare Parks & Recreation Commission
+Town of Weare, NH | 2024 – 2025
+Appointed by the Board of Selectmen to support capital improvement planning, public access initiatives, and volunteer engagement in recreation programming. Participated in project evaluations, community input processes, and strategic alignment with town development goals.
+- Budget review and approval including revolving account for equipment and facility needs
+- Site-walks to determine field and park conditions, determine solutions and approve budgets
+- Review, edit and finalize updated by-laws and job descriptions
+- Interviews and hiring decisions for park staff
+- Collaboration with schools and homeowners association for fundraising events
+- Coordination of logistics for town-wide celebrations
+
+External Advisory Board Member – NH CREATES the Future
+New Hampshire Collaborative for Regenerative Medicine Education and Training for Engineers and Scientists of the Future | 2022 – Present
+Serve on the external advisory board for this statewide initiative focused on regenerative medicine education and STEM workforce development. Contribute to outreach strategy, partnership-building, and alignment between academic institutions, industry stakeholders, and public agencies.
+
+Volunteer Coach & Program Director – Weare Athletic Club
+Weare, NH | 2010 – 2025
+Lead seasonal youth athletic programs and oversee volunteer coordination, scheduling, and safety compliance. Designed inclusive, skill-building team environments and managed program logistics for multiple age groups and sports.
+
+Secretary & Trail Volunteer – Weare Winter Wanderers
+Weare, NH | 2003 – 2025
+Elected Secretary for a local snowmobile and outdoor recreation club. Maintained official records and member communications, organized seasonal events, and led trail maintenance and signage projects to support safe and sustainable outdoor access.`;
+
+  const display = document.getElementById('display');
+  document.getElementById('coverBtn').onclick = () => { display.textContent = coverLetterText; };
+  document.getElementById('volunteerBtn').onclick = () => { display.textContent = volunteerExperiencesText; };
+</script>
+
 </body>
 </html>
+
