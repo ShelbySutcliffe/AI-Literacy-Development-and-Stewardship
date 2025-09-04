@@ -5,11 +5,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Applicant: Shelby Sutcliffe O'Donnell</title>
 <style>
-  body { font-family: Arial, sans-serif; max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
-  h1 { text-align: center; margin-bottom: 2rem; }
-  .buttons { display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem; }
-  button { padding: 1rem 2rem; font-size: 1rem; cursor: pointer; }
-  pre { background: #f9f9f9; padding: 1.5rem; border-radius: 8px; white-space: pre-wrap; font-size: 1.1rem; line-height: 1.6; }
+  body {
+    font-family: "Times New Roman", Times, serif;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: #e0e0e0;
+  }
+  .content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    white-space: pre-wrap;
+    font-size: 1.1rem;
+  }
 </style>
 </head>
 <body>
@@ -21,7 +54,7 @@
   <button id="volunteerBtn">Volunteer Experiences</button>
 </div>
 
-<pre id="display"></pre>
+<div id="display" class="content"></div>
 
 <script>
   const coverLetterText = `Shelby Sutcliffe O’Donnell
@@ -29,11 +62,14 @@
 Weare, NH 03281
 shelbysodonnell@outlook.com | 603.486.4861
 September 4, 2025
+
 Geeta Sharma
 Senior Director, Enterprise Data Governance
 The American Red Cross
 Via Online Application
-Dear Ms.Sharma,
+
+Dear Ms. Sharma,
+
 From designing AI-driven mapping tools for supply chain planning to creating persona-based learning experiences for diverse audiences, I have built a career at the intersection of creativity, technology, and human-centered learning. With a formal education grounded in communication, media production, and editing, I have consistently translated complex technical and organizational concepts into accessible, actionable insights—whether through workshops, webinars, or tailored training programs.
 
 My draw to The American Red Cross is deeply personal and enduring: a lifelong commitment to volunteer stewardship and compassionate service, paired with the mission to relieve suffering and strengthen communities. This aligns seamlessly with my professional ethos. At NH MEP, for example, I designed AI-integrated tools and facilitated workshops that enabled 3rd-tier manufacturers to engage with Department of Defense infrastructure programs, translating technical concepts into language that diverse audiences could understand and act upon. Similarly, in healthcare and legal contexts, I have developed training, documentation, and workflow improvements that made complex processes clear and achievable for both technical and non-technical professionals.
@@ -43,6 +79,7 @@ I am energized by opportunities to recognize patterns, integrate iterative proce
 Thank you for your consideration. I would welcome the opportunity to discuss how my experience and approach can strengthen AI literacy and responsible technology adoption at The American Red Cross.
 
 Sincerely,
+
 Shelby Sutcliffe O’Donnell`;
 
   const volunteerExperiencesText = `Voting Member – Weare Parks & Recreation Commission
@@ -74,4 +111,5 @@ Elected Secretary for a local snowmobile and outdoor recreation club. Maintained
 
 </body>
 </html>
+
 
